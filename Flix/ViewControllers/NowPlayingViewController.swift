@@ -81,6 +81,8 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
         task.resume()
     }
     
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
@@ -98,7 +100,11 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
         cell.posterImageView.af_setImage(withURL: posterURL)
         
         return cell
+        
+ 
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
