@@ -14,9 +14,8 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
     
 
     @IBOutlet weak var tableView: UITableView!
-  
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+   
     
     
     var movies: [[String: Any]] = []
@@ -27,11 +26,7 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
         
         // Start the activity indicator
         activityIndicator.startAnimating()
-        
         super.viewDidLoad()
-        
-        
-    
         
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
@@ -45,9 +40,10 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
 
        
     }
+        
     override func viewDidAppear(_ animated: Bool) {
         if Connectivity.isConnectedToInternet {
-            print("Yes! internet is available.")
+            print("Internet is available.")
         }
         else{
             let alertController = UIAlertController(title: "Network Error", message: "The Internet connection appears to be offline. Please connect to a network", preferredStyle: .alert)

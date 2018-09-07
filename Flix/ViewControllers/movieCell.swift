@@ -14,6 +14,7 @@ class movieCell: UITableViewCell {
     @IBOutlet weak var posterImageView: UIImageView!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

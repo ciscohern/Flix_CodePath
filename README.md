@@ -2,7 +2,7 @@
 
 **Flix** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -28,8 +28,8 @@ The following **additional** user stories are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Discuss the possible use of segues
+2. The significance of "?" versus "!"
 
 ## Video Walkthrough
 
@@ -42,6 +42,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+ 
+One of the only errors that I went through was at first the table cell view would not show up only a small portion of it, the reason behind this was because the table view had a preset contraint on it which only allowed row height of 44, it took me a while to figure it out.
 
 ## License
 
