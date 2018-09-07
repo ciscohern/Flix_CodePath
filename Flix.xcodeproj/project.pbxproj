@@ -10,6 +10,7 @@
 		5FA30B8D675E0DE49F48F96A /* Pods_Flix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873D63AB00959D77CF892FD4 /* Pods_Flix.framework */; };
 		AA21732E21403ACF00EB3787 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA21732D21403ACF00EB3787 /* NowPlayingViewController.swift */; };
 		AA21733021412B4600EB3787 /* movieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA21732F21412B4600EB3787 /* movieCell.swift */; };
+		AA5889302142D3B400DB4A31 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58892F2142D3B400DB4A31 /* Connectivity.swift */; };
 		AAD54E1221402A3500FCB22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD54E1121402A3500FCB22F /* AppDelegate.swift */; };
 		AAD54E1721402A3500FCB22F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD54E1521402A3500FCB22F /* Main.storyboard */; };
 		AAD54E1921402A3800FCB22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD54E1821402A3800FCB22F /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		8D39F69B6A9CF10AC7A290F2 /* Pods-FlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixUITests/Pods-FlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA21732D21403ACF00EB3787 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		AA21732F21412B4600EB3787 /* movieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieCell.swift; sourceTree = "<group>"; };
+		AA58892F2142D3B400DB4A31 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		AAD54E0E21402A3500FCB22F /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD54E1121402A3500FCB22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD54E1621402A3500FCB22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA5889292142D22000DB4A31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA21732D21403ACF00EB3787 /* NowPlayingViewController.swift */,
+				AA21732F21412B4600EB3787 /* movieCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA58892A2142D23900DB4A31 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AAD54E1A21402A3800FCB22F /* LaunchScreen.storyboard */,
+				AAD54E1521402A3500FCB22F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		AAD54E0521402A3500FCB22F = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +146,11 @@
 		AAD54E1021402A3500FCB22F /* Flix */ = {
 			isa = PBXGroup;
 			children = (
-				AA21732D21403ACF00EB3787 /* NowPlayingViewController.swift */,
-				AA21732F21412B4600EB3787 /* movieCell.swift */,
-				AAD54E1521402A3500FCB22F /* Main.storyboard */,
+				AA58892A2142D23900DB4A31 /* Storyboards */,
+				AA5889292142D22000DB4A31 /* ViewControllers */,
 				AAD54E1121402A3500FCB22F /* AppDelegate.swift */,
+				AA58892F2142D3B400DB4A31 /* Connectivity.swift */,
 				AAD54E1821402A3800FCB22F /* Assets.xcassets */,
-				AAD54E1A21402A3800FCB22F /* LaunchScreen.storyboard */,
 				AAD54E1D21402A3800FCB22F /* Info.plist */,
 			);
 			path = Flix;
@@ -386,6 +405,7 @@
 			files = (
 				AA21733021412B4600EB3787 /* movieCell.swift in Sources */,
 				AA21732E21403ACF00EB3787 /* NowPlayingViewController.swift in Sources */,
+				AA5889302142D3B400DB4A31 /* Connectivity.swift in Sources */,
 				AAD54E1221402A3500FCB22F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
