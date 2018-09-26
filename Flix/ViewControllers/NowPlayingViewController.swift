@@ -26,6 +26,8 @@ class NowPlayingViewController: UIViewController,UITableViewDataSource,UITableVi
         
         // Start the activity indicator
         activityIndicator.startAnimating()
+
+        
         super.viewDidLoad()
         
         refreshControl = UIRefreshControl()

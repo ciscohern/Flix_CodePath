@@ -30,6 +30,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         if let movie = movie{
             titleLabel.text = movie[MovieKeys.title] as? String
